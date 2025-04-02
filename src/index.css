@@ -1,0 +1,148 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 2.5;
+  font-weight: 400;
+  width: 100vw;
+  overflow-x: hidden;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+
+.nav-list-item {
+  margin-right: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.img_react_logo {
+  width: 200px;
+}
+
+a {
+  font-weight: 500;
+  color: #61dafb;
+  text-decoration: inherit;
+  will-change: filter;
+  transition: filter 300ms;
+}
+a:hover {
+  color: #98e9ff;
+  cursor: pointer;
+}
+
+a:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 0vh;
+  top: 0px;
+  width: 100%;
+  transform-origin: top left;
+  transition: transform 0.1s ease-out;
+  position: relative;
+  padding-bottom: 60px; /* Add space for footer */
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: #1a1a1a 0px 10px 10px;
+  margin: 0;
+  
+}
+
+main,
+footer {
+  padding: 2rem;
+}
+
+ol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* some nice style for text */
+  font-family: "Courier New", Courier, monospace;
+  line-height: 2.5;
+}
+li {
+  padding: 0;
+}
+
+ol li {
+  margin: 1em 0;
+  margin-bottom: 3em;
+}
+
+footer {
+  bottom: 0px;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  background: #000;
+  transform-origin: bottom left;
+  z-index: 1000;
+}
+
+@media (min-width: 1000px) {
+  main {
+    padding-left: 35rem;
+    padding-right: 35rem;
+  }
+}
