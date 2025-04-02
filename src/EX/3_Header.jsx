@@ -3,7 +3,7 @@ function Header() {
     <header className="header">
       <a href="" className="nav-list-item">
         <img
-          src="src/assets/react.svg"
+          src={import.meta.env.BASE_URL + "react.svg"}
           alt="react logo"
           className="header-logo"
         />
